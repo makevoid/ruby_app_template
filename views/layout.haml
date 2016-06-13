@@ -1,0 +1,17 @@
+!!!5
+%html
+  %head
+    %meta{ charset: "utf-8" }
+    %title App
+    = assets :css
+
+  %body{ class: body_class }
+    .container
+      %h1
+        %a{ href: "/" } App
+      %nav
+        %a.button{ href: "/" } Home
+      %section.content
+        = yield
+
+    = assets :js

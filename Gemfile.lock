@@ -1,0 +1,23 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    haml (4.0.7)
+      tilt
+    oj (2.15.1)
+    puma (3.4.0)
+    rack (1.6.4)
+    roda (2.14.0)
+      rack
+    tilt (2.0.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  haml
+  oj
+  puma
+  roda
+
+BUNDLED WITH
+   1.11.2
