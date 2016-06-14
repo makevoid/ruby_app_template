@@ -1,7 +1,8 @@
 require_relative 'config/env'
 require_relative 'lib/roda_utils'
 
-class App < Roda
+# bapp website
+class Bapp < Roda
   plugin :render, engine: 'haml'
   plugin :assets,
     js: %w(
@@ -16,15 +17,29 @@ class App < Roda
 
   include RodaUtils
 
-  route do |r|
+  route { |r|
     r.assets
 
-    r.root do
+    r.root {
       view 'index'
-    end
-  end
+    }
 
-  not_found do
+    r.on("install") {
+      # (r.is).and(r.get) {
+      r.is { r.get {
+        view 'install'
+      } }
+    }
+
+    r.on("configure") {
+      view 'configure'
+    }
+
+
+
+  }
+
+  not_found {
     view "not_found"
-  end
+  }
 end
