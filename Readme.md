@@ -1,35 +1,22 @@
-# Bapp Framework Website
+# App
 
-## What is Bapp Framework
+simple Roda + Haml boilerplate app to quick-start your roda, view based apps
 
-Bapp framework is a small set of good conventions made together for a tiny but super-useful package to interact with the Etherum platform, applying an Object Oriented and thin CRU (CRUD without deletion) approach.
-
-We want to be able to realize, with the least amount of code possible, just the easiest and most customizable app-way
+includes milligram CSS
 
 
-Documentation:
+### Install
 
-## Prerequisites
-
-  Install Ethereum, geth and solc are required
+    bundle
 
 
-## Start the blockchain process
-
-Run:
-
-   ./bin/blockchain
+### Run
 
 
-## Write your contracts
-
-  vi contracts/your_contract.stl
+    bundle exec rackup -p 3000
 
 
-  atom contracts/your_contract.stl
+then visit: <http://localhost:3000>
 
-or with your favourite editor
 
-## Launch the app
-
-    npm start
+@makevoid

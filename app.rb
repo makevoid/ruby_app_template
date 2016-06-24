@@ -1,8 +1,7 @@
 require_relative 'config/env'
 require_relative 'lib/roda_utils'
 
-# bapp website
-class Bapp < Roda
+class App < Roda
   plugin :render, engine: 'haml'
   plugin :assets,
     js: %w(
