@@ -1,12 +1,19 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.10.0)
+    execjs (2.7.0)
     haml (4.0.7)
       tilt
-    oj (2.15.1)
+    hashie (3.4.4)
+    inflecto (0.0.2)
+    oj (2.17.1)
     puma (3.4.0)
-    rack (1.6.4)
-    roda (2.14.0)
+    rack (2.0.1)
+    roda (2.15.0)
       rack
     tilt (2.0.5)
 
@@ -14,10 +21,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coffee-script
   haml
+  hashie
+  inflecto
   oj
   puma
   roda
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
