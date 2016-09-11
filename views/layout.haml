@@ -6,12 +6,29 @@
     = assets :css
 
   %body{ class: body_class }
+    -# .container.is-fluid
     .container
-      %h1
-        %a{ href: "/" } App
-      %nav
-        %a.button{ href: "/" } Home
+
+      %nav.nav.has-shadow
+        .container
+          .nav-left
+            %a.nav-item.is-brand{ href: "/" }
+              %h1.title.hs20 App
+          .nav-center
+            %a.nav-item.is-tab.is-active{ href: "/" } Home
+            %a.nav-item.is-tab{ href: "#" } Page1
+
+      %section.hero.is-primary.is-medium
+        .hero-body
+          .container.hs20
+            %h1.title
+              %a{ href: "/" } App
+            %h2.subtitle
+              Awesome app!
+
+
       %section.content
-        = yield
+        .box
+          = yield
 
     = assets :js

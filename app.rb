@@ -10,7 +10,7 @@ class App < Roda
       app.js
     ),
     css:  %w(
-      vendor/milligram.css
+      vendor/bulma.css
       style.css
     )
   plugin :not_found

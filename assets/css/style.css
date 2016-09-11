@@ -1,33 +1,11 @@
+.s10 { height: 10px; }
+.s20 { height: 20px; }
+.s30 { height: 30px; }
+.s40 { height: 40px; }
+.s50 { height: 50px; }
 
-.container {
-  margin: 40px 0;
-}
-
-.container > h1 {
-  font-size: 2em;
-}
-
-section h1 {
-  font-size: 2em;
-}
-
-section.content > h1 {
-  font-size: 1.6em;
-}
-
-h2 {
-  font-size: 1.4em;
-}
-
-nav {
-  margin-bottom: 15px;
-}
-
-nav a.button {
-  margin-right: 10px;
-  /* small buttons */
-  font-size: .9rem;
-	height: 2.8rem;
-	line-height: 2.8rem;
-	padding: 0 1.5rem;
-}
+.hs10 { margin-left: 10px; }
+.hs20 { margin-left: 20px; }
+.hs30 { margin-left: 30px; }
+.hs40 { margin-left: 40px; }
+.hs50 { margin-left: 50px; }
