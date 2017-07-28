@@ -4,29 +4,18 @@ require_relative 'lib/view_helpers'
 
 class App < Roda
   plugin :render, engine: 'haml'
-  plugin :assets,
-    js: %w(
-      vendor/underscore.js
-      app.js
-    ),
-    css:  %w(
-      vendor/bulma.css
-      style.css
-    )
-  plugin :not_found
   plugin :multi_route
   plugin :partials
   plugin :all_verbs
+  plugin :not_found
   plugin :error_handler
+  plugin :public
   # plugin :basic_auth, authenticator: proc {|_, pass| pass == PASSWORD }, realm: 'Please enter ANY username and the password'
-  # plugin :static, ['/uploads'] if APP_ENV == "development"
 
   include RodaUtils
   include ViewHelpers
 
   route do |r|
-    r.assets
-
     r.root {
       view 'index'
     }
@@ -34,10 +23,12 @@ class App < Roda
     r.on("foo") {
       r.is {
         r.get {
-          view 'foo'
+          view 'page_one'
         }
       }
     }
+
+    r.public if APP_ENV != "production"
   end
 
   not_found do

@@ -2,4 +2,4 @@
 
 # bundle exec rackup -p 3000
 
-rerun -s KILL -p "**/*.{rb}" -- bundle exec rackup -p 3000
+rerun -s KILL -p "**/*.{rb}" -- bundle exec rackup -p ${PORT:-3000}

@@ -3,10 +3,10 @@
   %head
     %meta{ charset: "utf-8" }
     %title App
-    = assets :css
+    %link{ href: "/css/vendor/bulma.css", type: "text/css", rel: "stylesheet" }
+    %link{ href: "/css/style.css", type: "text/css", rel: "stylesheet" }
 
   %body{ class: body_class }
-    -# .container.is-fluid
     .container
 
       %nav.nav.has-shadow
@@ -16,7 +16,7 @@
               %h1.title.hs20 App
           .nav-center
             %a.nav-item.is-tab.is-active{ href: "/" } Home
-            %a.nav-item.is-tab{ href: "#" } Page1
+            %a.nav-item.is-tab{ href: "/foo" } Page1
 
       %section.hero.is-primary.is-medium
         .hero-body
@@ -31,4 +31,6 @@
         .box
           = yield
 
-    = assets :js
+    %script{ src: "/js/vendor/handlebars.js", type: "text/javascript" }
+    %script{ src: "/js/vendor/underscore.js", type: "text/javascript" }
+    %script{ src: "/js/app.js", type: "text/javascript" }
