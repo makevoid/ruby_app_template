@@ -5,6 +5,7 @@ gem "inflecto"
 
 gem "oj"
 gem "haml"
+gem "rack"
 gem "roda"
 
 # dev server

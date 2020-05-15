@@ -25,7 +25,8 @@ DEPENDENCIES
   inflecto
   oj
   puma
+  rack
   roda
 
 BUNDLED WITH
-   1.17.2
+   2.1.4
