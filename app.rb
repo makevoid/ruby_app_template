@@ -28,7 +28,7 @@ class App < Roda
       }
     }
 
-    r.public if APP_ENV != "production"
+    r.public # if APP_ENV != "production"
   end
 
   not_found do

@@ -1,19 +1,17 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    bigdecimal (2.0.0)
-    haml (5.1.2)
+    haml (5.2.2)
       temple (>= 0.8.0)
       tilt
-    hashie (4.1.0)
+    hashie (5.0.0)
     inflecto (0.0.2)
-    nio4r (2.5.2)
-    oj (3.10.12)
-      bigdecimal (>= 1.0, < 3)
-    puma (4.3.5)
+    nio4r (2.5.8)
+    oj (3.13.11)
+    puma (5.5.2)
       nio4r (~> 2.0)
     rack (2.2.3)
-    roda (3.35.0)
+    roda (3.52.0)
       rack
     temple (0.8.2)
     tilt (2.0.10)
@@ -31,4 +29,4 @@ DEPENDENCIES
   roda
 
 BUNDLED WITH
-   2.1.4
+   2.2.22
