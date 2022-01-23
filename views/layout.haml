@@ -8,15 +8,14 @@
 
   %body{ class: body_class }
     .container
-
       %nav.navbar{"aria-label" => "main navigation", role: "navigation"}
         .navbar-brand
-          %a.navbar-item{:href => "https://bulma.io"}
-            %h1
-              %a.subtitle.is-size-4{ href: "/" } App
-          %a.navbar-burger.burger{"aria-expanded" => "false", "aria-label" => "menu", "data-target" => "navbarBasicExample", :role => "button"}
-            %span{"aria-hidden" => "true"} Home
-            %span{"aria-hidden" => "true"} Page 1
+          %a.navbar-item{ href: "/" }
+            %h1.bold
+              App
+          -# %a.navbar-burger.burger{"aria-expanded" => "false", "aria-label" => "menu", "data-target" => "navbarBasicExample", :role => "button"}
+          -#   %span{"aria-hidden" => "true"} Home
+          -#   %span{"aria-hidden" => "true"} Page 1
         #navbarBasicExample.navbar-menu
           .navbar-start
             %a.navbar-item{ href: "/" } Home
