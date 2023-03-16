@@ -11,7 +11,7 @@ GEM
     oj (3.14.2)
     puma (6.1.1)
       nio4r (~> 2.0)
-    rack (2.2.6.3)
+    rack (2.2.6.4)
     roda (3.65.0)
       rack
     temple (0.10.0)
@@ -27,7 +27,7 @@ DEPENDENCIES
   inflecto
   oj
   puma
-  rack (~> 2.0)
+  rack (~> 2.2)
   roda
 
 BUNDLED WITH
