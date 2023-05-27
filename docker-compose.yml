@@ -7,4 +7,5 @@ services:
     image: makevoid/app
     ports:
       - 3000:3000
-    environment: []
+    environment:
+      RACK_ENV: production
