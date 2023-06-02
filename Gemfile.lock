@@ -7,15 +7,15 @@ GEM
       tilt
     hashie (5.0.0)
     inflecto (0.0.2)
-    nio4r (2.5.8)
-    oj (3.14.2)
-    puma (6.1.1)
+    nio4r (2.5.9)
+    oj (3.14.3)
+    puma (6.3.0)
       nio4r (~> 2.0)
-    rack (2.2.6.3)
-    roda (3.65.0)
+    rack (2.2.7)
+    roda (3.68.0)
       rack
-    temple (0.10.0)
-    thor (1.2.1)
+    temple (0.10.2)
+    thor (1.2.2)
     tilt (2.1.0)
 
 PLATFORMS
