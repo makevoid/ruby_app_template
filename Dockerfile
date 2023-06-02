@@ -6,6 +6,7 @@ RUN apk --no-cache add make gcc libc-dev \
 RUN mkdir -p /app
 WORKDIR /app
 
+RUN gem install bundler
 ADD Gemfile* ./
 RUN bundle install
 
