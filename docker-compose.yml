@@ -9,4 +9,4 @@ services:
       - 3000:3000
     environment:
       RACK_ENV: production
-  platform: linux/amd64
+    platform: linux/amd64
