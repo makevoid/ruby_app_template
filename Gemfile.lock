@@ -5,7 +5,6 @@ GEM
       temple (>= 0.8.2)
       thor
       tilt
-    hashie (5.0.0)
     inflecto (0.0.2)
     nio4r (2.5.9)
     oj (3.16.1)
@@ -23,7 +22,6 @@ PLATFORMS
 
 DEPENDENCIES
   haml
-  hashie
   inflecto
   oj
   puma
