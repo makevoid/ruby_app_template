@@ -1,6 +1,5 @@
 source "https://rubygems.org"
 
-gem "hashie"
 gem "inflecto"
 
 gem "oj"
